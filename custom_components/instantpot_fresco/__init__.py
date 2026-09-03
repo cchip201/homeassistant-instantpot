@@ -22,7 +22,7 @@ from .api import KitchenOSClient, CognitoTokenManager
 
 _LOGGER = logging.getLogger(__name__)
 
-PLATFORMS: list = ["sensor"]
+PLATFORMS: list = ["sensor", "binary_sensor", "button"]
 
 
 

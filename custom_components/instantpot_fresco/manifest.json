@@ -2,7 +2,7 @@
   "domain": "instantpot_fresco",
   "name": "InstantPot",
   "codeowners": ["@seanlaidlaw"],
-  "version": "0.2.0",
+  "version": "0.3.0",
   "documentation": "https://github.com/seanlaidlaw/homeassistant-instantpot",
   "issue_tracker": "https://github.com/seanlaidlaw/homeassistant-instantpot/issues",
   "iot_class": "cloud_push",
