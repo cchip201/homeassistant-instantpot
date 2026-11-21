@@ -1,10 +1,10 @@
 {
   "domain": "instantpot_fresco",
   "name": "InstantPot",
-  "codeowners": ["@seanlaidlaw"],
+  "codeowners": ["@seanlaidlaw", "@cchip201"],
   "version": "0.3.0",
-  "documentation": "https://github.com/seanlaidlaw/homeassistant-instantpot",
-  "issue_tracker": "https://github.com/seanlaidlaw/homeassistant-instantpot/issues",
+  "documentation": "https://github.com/cchip201/homeassistant-instantpot",
+  "issue_tracker": "https://github.com/cchip201/homeassistant-instantpot/issues",
   "iot_class": "cloud_push",
   "integration_type": "hub",
   "config_flow": true,

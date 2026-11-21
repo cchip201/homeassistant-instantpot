@@ -3,6 +3,23 @@
 Control your InstantPot via HomeAssistant, using your InstantConnect app login email and password.
 This integration exposes Home Assistant services you can call from automations, scripts, or the UI.
 
+## This fork
+
+This repository is a fork of [seanlaidlaw/homeassistant-instantpot](https://github.com/seanlaidlaw/homeassistant-instantpot). The code, the GPL-3.0 licence and the credit stay with Sean Laidlaw; this fork keeps the same integration domain (`instantpot_fresco`), so existing entries and entities carry over. Upstream has had no change merged for a long time, so this fork carries its own additions.
+
+What it adds over upstream:
+
+- A **Cooking** binary sensor that is on while the pot is running a program.
+- A **Program** sensor and a **Finishes at** timestamp sensor (Home Assistant shows a live countdown for it).
+- A **Cancel** button that sends the same cancel command as the Cancel service.
+
+Add it as a custom repository:
+
+- **Home Assistant 2026.11 and newer** (Marketplace): open **Settings** > **Marketplace** > **Add from link**, enter `https://github.com/cchip201/homeassistant-instantpot`, select **Add** (pick the type **Integration** if it asks), then install **InstantPot** and restart Home Assistant.
+- **Home Assistant 2026.10 and older** (HACS): open HACS, then the three-dot menu > **Custom repositories**, enter `https://github.com/cchip201/homeassistant-instantpot`, type **Integration**, select **Add**, then download **InstantPot** and restart Home Assistant.
+
+The install steps below are upstream's: where they say to add `seanlaidlaw/homeassistant-instantpot`, use the address above for this fork. Both repositories install into `custom_components/instantpot_fresco`, so use one of them, not both. Report problems with this fork in its [issues](https://github.com/cchip201/homeassistant-instantpot/issues).
+
 
 ## Install (HACS custom repo)
 1. Make sure you've installed [HACS](https://hacs.xyz/) already.
